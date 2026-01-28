@@ -19,7 +19,7 @@ unfairCoinToss p fairCoinToss =
               (False, True) -> pure True
               (True, False) -> pure False
               _ -> go rest
-   in go binexp_p
+  in go binexp_p
 
 fairCoinFromUnfair :: IO Bool -> IO Bool
 fairCoinFromUnfair unfairCoin = do
